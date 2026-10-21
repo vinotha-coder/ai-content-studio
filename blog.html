@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Blog Generator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>✦</span>
+        AI Content Studio
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="blog.html">Blog AI</a>
+        <a href="product.html">Product AI</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="generator-page">
+
+    <div class="page-heading">
+
+        <div class="badge">
+            ✍ AI BLOG WRITER
+        </div>
+
+        <h1>
+            Create a Blog About Anything
+        </h1>
+
+        <p>
+            Enter any topic and generate a structured,
+            professional and SEO-friendly blog.
+        </p>
+
+    </div>
+
+
+    <div class="generator-layout">
+
+        <div class="generator-form">
+
+            <label>What do you want to write about?</label>
+
+            <textarea
+                id="blogTopic"
+                placeholder="Example: Best laptops for MCA students">
+            </textarea>
+
+
+            <div class="form-row">
+
+                <div>
+
+                    <label>Audience</label>
+
+                    <select id="audience">
+
+                        <option>General Audience</option>
+                        <option>Students</option>
+                        <option>Professionals</option>
+                        <option>Business Owners</option>
+                        <option>Customers</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Tone</label>
+
+                    <select id="tone">
+
+                        <option>Professional</option>
+                        <option>Friendly</option>
+                        <option>Informative</option>
+                        <option>Conversational</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div>
+
+                    <label>Language</label>
+
+                    <select id="language">
+
+                        <option>English</option>
+                        <option>Tamil</option>
+                        <option>Tanglish</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Length</label>
+
+                    <select id="length">
+
+                        <option>Short</option>
+                        <option selected>Medium</option>
+                        <option>Long</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <label>SEO Keywords</label>
+
+            <input
+                type="text"
+                id="keywords"
+                placeholder="Example: laptops, MCA, students">
+
+
+            <button
+                class="generate-btn"
+                onclick="generateBlog()">
+
+                ✨ Generate Blog
+
+            </button>
+
+        </div>
+
+
+        <div class="preview-card">
+
+            <div class="preview-header">
+
+                <span>AI Preview</span>
+
+                <span class="live-badge">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div id="blogPreview">
+
+                <div class="empty-state">
+
+                    <div>✍️</div>
+
+                    <h3>Your generated blog will appear here</h3>
+
+                    <p>
+                        Enter a topic and click Generate Blog.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="resources-section">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            RESOURCE DISCOVERY
+        </div>
+
+        <h2>
+            Useful Resources
+        </h2>
+
+        <p>
+            Relevant external websites can be shown based
+            on the topic.
+        </p>
+
+    </div>
+
+
+    <div id="resources" class="resource-grid">
+
+        <div class="resource-card">
+
+            <h3>🔍 Search Resources</h3>
+
+            <p>
+                Topic-specific resources will appear here
+                after content generation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script src="js/blog.js"></script>
+
+</body>
+</html>

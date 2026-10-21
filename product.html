@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Product Writer | AI Content Studio</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span>✦</span>
+
+        AI Content Studio
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="blog.html">
+            Blog AI
+        </a>
+
+        <a class="active"
+           href="product.html">
+
+            Product AI
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<section class="generator-page">
+
+
+    <!-- PAGE HEADING -->
+
+    <div class="page-heading">
+
+        <div class="badge">
+            🛍 PRODUCT AI
+        </div>
+
+
+        <h1>
+            Create Professional Product Content
+        </h1>
+
+
+        <p>
+            Enter your product details and generate
+            a professional product showcase.
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         GENERATOR AREA
+    ========================= -->
+
+    <div class="generator-layout">
+
+
+        <!-- =====================
+             LEFT FORM
+        ====================== -->
+
+        <div class="generator-form">
+
+
+            <!-- PRODUCT NAME -->
+
+            <label>
+                Product Name
+            </label>
+
+            <input
+                id="productName"
+                type="text"
+                placeholder="Example: JBL Bluetooth Speaker"
+            >
+
+
+
+            <!-- BRAND -->
+
+            <label>
+                Brand
+            </label>
+
+            <input
+                id="brand"
+                type="text"
+                placeholder="Example: JBL"
+            >
+
+
+
+            <!-- CATEGORY -->
+
+            <label>
+                Category
+            </label>
+
+            <select id="productCategory">
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option value="Smartphone">
+                    Smartphone
+                </option>
+
+                <option value="Laptop">
+                    Laptop
+                </option>
+
+                <option value="Bluetooth Speaker">
+                    Bluetooth Speaker
+                </option>
+
+                <option value="Television">
+                    Television
+                </option>
+
+                <option value="Headphones">
+                    Headphones
+                </option>
+
+                <option value="Smartwatch">
+                    Smartwatch
+                </option>
+
+                <option value="Camera">
+                    Camera
+                </option>
+
+                <option value="Gaming">
+                    Gaming
+                </option>
+
+                <option value="Home Appliance">
+                    Home Appliance
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+
+            <!-- PRICE -->
+
+            <label>
+                Price
+            </label>
+
+            <input
+                id="price"
+                type="text"
+                placeholder="Example: ₹4,999"
+            >
+
+
+
+            <!-- FEATURES -->
+
+            <label>
+                Product Features
+            </label>
+
+            <textarea
+                id="features"
+                placeholder="Example: 20W sound, Bluetooth 5.3, 12 hours battery, waterproof"
+            ></textarea>
+
+
+
+            <!-- TARGET CUSTOMER -->
+
+            <label>
+                Target Customer
+            </label>
+
+            <input
+                id="customer"
+                type="text"
+                placeholder="Example: Students and music lovers"
+            >
+
+
+
+            <!-- OPTIONAL IMAGE -->
+
+            <label>
+                Product Image URL
+                <span class="optional">
+                    Optional
+                </span>
+            </label>
+
+            <input
+                id="productImage"
+                type="url"
+                placeholder="Paste image URL if you have one"
+            >
+
+
+
+            <!-- GENERATE -->
+
+            <button
+                class="generate-btn"
+                onclick="generateProduct()">
+
+                ✨ Generate Product
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =====================
+             RIGHT PREVIEW
+        ====================== -->
+
+        <div class="product-preview"
+             id="productPreview">
+
+
+            <div class="empty-state">
+
+                <div>
+                    🛍️
+                </div>
+
+                <h3>
+                    Product Preview
+                </h3>
+
+                <p>
+                    Enter your product details
+                    and click Generate Product.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCT RESOURCES
+========================= -->
+
+<section class="resources-section"
+         id="productResourcesSection"
+         style="display:none;">
+
+
+    <div class="section-heading">
+
+        <div class="badge">
+            RESOURCE DISCOVERY
+        </div>
+
+
+        <h2>
+            Useful Product Resources
+        </h2>
+
+
+        <p>
+            Explore information, videos,
+            reviews and images related to
+            your exact product.
+        </p>
+
+    </div>
+
+
+    <div id="productResources"
+         class="product-resource-grid">
+
+    </div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="js/product.js"></script>
+
+
+</body>
+
+</html>
